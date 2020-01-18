@@ -27,7 +27,7 @@ send_notification <- function(item_name, info) {
   } else {
     price <- info[[1]]
     sale <- info[[2]]
-    message <- glue("<b>Price:</b> {price} <br> <b>Sale:</b> {sale}")
+    message <- paste0(price, sale)
     
     email <-
       email %>%
